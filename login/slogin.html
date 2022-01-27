@@ -9,12 +9,12 @@
         <a href="../home/home.html">TILLOTOMA FOUNDATION</a>
       </div>
   </nav>
-    <div class="wrapper" id="box">
-      <div class="title">Student Login</div>
+    <div class="wrapper">
+      <div class="title">Faculty Login</div>
         <form action="#" method="POST">
         <div class="field">
           <input type="text" name="username" required />
-          <label>Email Address</label>
+          <label>username</label>
         </div>
         <div class="field">
           <input type="password" name="password" required />
@@ -34,9 +34,8 @@
         </div>
       </form>
     </div>
-
-    <div class="container" id="box">
-      <div class="title">Student Sign-up</div>
+    <div class="container">
+      <div class="title">Faculty Sign-up</div>
       <div class="content">
         <form action="connect.php" method="POST">
           <div class="user-details">
@@ -71,32 +70,18 @@
                 required
               />
             </div>
-            <div class="input-box">
-              <span class="details">Username:</span>
-              <input type="text" placeholder="Enter your name:" name="fullname" required />
-            </div>
-            <div class="input-box">
-              <span class="details">Password:</span>
-              <input
-               id="pswd"
-                type="password"
-                placeholder="Enter your password"
-                name="password"
-                required
-              />
-            </div>
           </div>
           <div class="button">
-            <input type="submit"  name="submit"  onclick="submit()"/>
+            <input type="submit" value="Submit" name="submit" href="" />
             <p id="policy">By signing up, you agree to our<a href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a></p>
             <hr>
           </div>
-          <div class="login-link">Already have an account?  <a href="#" onclick="loginpage()">login</a>
+          <div class="signup-link">Not a member? <a href="#" onclick="loginpage()">Login now</a>
           </div>
           </div>
         </form>
       </div>
-    
-<script src="../login/slogin.js"></script>
-</body>
-</html>
+    </div>
+  
+    <script src="../login/slogin.js"></script>
+</body></html>
