@@ -241,13 +241,13 @@ form .input-box span.details {
   font-size: 16px;
   border-radius: 100px;
   padding-left: 20px;
-  border: 1px solid #f79fcb;
+  border: 1px solid #a9d2f0;
   border-bottom-width: 3px;
   transition: all 0.3s ease;
 }
 .user-details .input-box input:focus,
 .user-details .input-box input:valid {
-  border-color: #9b59b6;
+  border-color: #0d00ff;
 }
 form .gender-details .gender-title {
   font-size: 20px;
@@ -305,7 +305,7 @@ form .button input {
 }
 form .button input:hover {
   /* transform: scale(0.99); */
-  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(135deg, rgb(143, 149, 241), rgb(69, 191, 221));
 }
 #policy{
     font-size: 13px;
