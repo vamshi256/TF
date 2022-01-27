@@ -9,12 +9,12 @@
         <a href="../home/home.html">TILLOTOMA FOUNDATION</a>
       </div>
   </nav>
-    <div class="wrapper">
-      <div class="title">Faculty Login</div>
+    <div class="wrapper" id="box">
+      <div class="title">Student Login</div>
         <form action="#" method="POST">
         <div class="field">
           <input type="text" name="username" required />
-          <label>username</label>
+          <label>Email Address</label>
         </div>
         <div class="field">
           <input type="password" name="password" required />
@@ -34,15 +34,17 @@
         </div>
       </form>
     </div>
-    <div class="container">
-      <div class="title">Faculty Sign-up</div>
+
+    <div class="container" id="box">
+      <div class="title">Student Sign-up</div>
       <div class="content">
-        <form action="connect.php" method="POST">
+        <form action="#" method="POST">
           <div class="user-details">
             <div class="input-box">
               <span class="details" >Full Name:</span>
-              <input type="text" placeholder="Enter your username:" name="username" required />
+              <input type="text" placeholder="xyz abc" name="username" required />
             </div>
+
             <div class="input-box">
               <span class="details">Date of birth:</span>
               <input
@@ -52,6 +54,27 @@
                 required
               />
             </div>
+
+            <div class="input-box">
+              <span class="details">Country:</span>
+              <input
+                type="text"
+                placeholder="Country"
+                name="Country"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Nationality:</span>
+              <input
+                type="text"
+                placeholder="nationality"
+                name="nationality"
+                required
+              />
+            </div>
+            
             <div class="input-box">
               <span class="details">Email:</span>
               <input
@@ -70,18 +93,32 @@
                 required
               />
             </div>
+            <div class="input-box">
+              <span class="details">Username:</span>
+              <input type="text" placeholder="xyz256" name="username" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Password:</span>
+              <input
+               id="pswd"
+                type="password"
+                placeholder="kfjssa2@13"
+                name="password"
+                required
+              />
+            </div>
           </div>
           <div class="button">
-            <input type="submit" value="Submit" name="submit" href="" />
+            <input type="submit"  name="submit"  onclick="submit()"/>
             <p id="policy">By signing up, you agree to our<a href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a></p>
             <hr>
           </div>
-          <div class="signup-link">Not a member? <a href="#" onclick="loginpage()">Login now</a>
+          <div class="login-link">Already have an account?  <a href="#" onclick="loginpage()">login</a>
           </div>
           </div>
         </form>
       </div>
-    </div>
-  
-    <script src="../login/slogin.js"></script>
-</body></html>
+    
+<script src="../login/slogin.js"></script>
+</body>
+</html>
