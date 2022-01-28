@@ -7,11 +7,11 @@
 }
 html,body{
   width: 100%;
-  height: 100%;
+  height: 120%;
   /*background-image: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZWR1Y2F0aW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80");*/
   /*background-color: #f8f4f4;*/
   background: linear-gradient(
-    99deg,
+    135deg,
     rgb(70, 121, 129) 25%,
     rgb(135, 192, 201) 40%,
     rgb(225, 246, 250) 55%
@@ -59,7 +59,7 @@ body .wrapper .container{
   left: 35%;
   top: 15%;
   margin-top: 20px;
-  max-height: 73vh;
+  max-height: 77vh;
   width: 380px;
   background: #fff;
   border-radius: 15px;  
@@ -148,13 +148,18 @@ form .content label{
 form .content .pass-link{
   color: "";
 }
+#snth{
+  font-size: 15px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
 form .field input[type="submit"]{
   color: #fff;
   border: none;
   padding-left: 0;
   margin-top: -10px;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: 600;
   cursor: pointer;
   background: linear-gradient(
     141deg,
@@ -184,7 +189,6 @@ form .signup-link a:hover{
 .container {
   position: relative;
   left: 25%; 
-  top: 20%;
   max-width: 600px;
   width: 100%;
   background-color: #fff;
@@ -292,8 +296,8 @@ form .button input {
   border-radius: 5px;
   border: none;
   color: #fff;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -320,6 +324,7 @@ a{
   text-align: center;
 }
 @media (max-width: 584px) {
+
   .container {
     max-width: 100%;
   }
@@ -343,3 +348,44 @@ a{
     flex-direction: column;
   }
 }
+
+.fas{
+  position: absolute;
+  font-size: 20px;
+  margin-top: 12px;
+  margin-left: calc(80% / 2 - 20px);
+  color: #7cc4f8;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: calc(45% / 2 - 20px);
+  background: white;
+  color: #53b0f1;
+  padding: 0 3px;
+  font-size: 14px;
+  border-radius: 10px;
+  max-width: 130px;
+  height: 80px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content option{
+  color: black;
+  padding: 2px 6px;
+  text-decoration:none;
+  cursor: pointer;
+}
+
+.dropdown-content option:hover{
+  color: #1b96ee;
+}
+
+
+
+
+
