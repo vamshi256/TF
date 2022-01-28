@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="sloginstyle.css">
+    <script src="https://kit.fontawesome.com/99ab3e2927.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav>
       <div class="logo">
-        <a href="../home/home.html" id="log"><img id="lgo" src="../assets/logo.jpg" alt="logo"></a>
-        <a href="../home/home.html">TILLOTOMA FOUNDATION</a>
+        <a href="#" id="log"><img id="lgo" src="../assets/logo.jpg" alt="logo"></a>
+        <a href="#">TILLOTOMA FOUNDATION</a>
       </div>
   </nav>
     <div class="wrapper">
@@ -54,37 +55,82 @@
             </div>
             <div class="input-box">
               <span class="details">Education qualification:</span>
+              <i class="fas fa-caret-down" onclick="drop0()"></i>
+              <div class="dropdown-content" name="education qualification">
+                <option onclick="eduqlfy(value)" value="Btech">Btech</option>
+                <option onclick="eduqlfy(value)" value="B.E">B.E</option>
+                <option onclick="eduqlfy(value)" value="B.com">B.com</option>
+                <option onclick="eduqlfy(value)" value="Arts">Arts</option>
+                <option onclick="eduqlfy(value)" value="Mtech">Mtech</option>
+              </div>
               <input
+                id=edutnqlfy
                 type="text"
                 placeholder="Btech"
                 name="eduqulify"
+                value=""
                 required
               />
             </div>
             <div class="input-box">
               <span class="details">Present occupation:</span>
+              <i class="fas fa-caret-down" onclick="drop1()"></i>
+              <div class="dropdown-content">
+                <option onclick="prsntoccupation(value)" value="teacher">teacher</option> 
+                <option onclick="prsntoccupation(value)" value="student">student</option>
+                <option onclick="prsntoccupation(value)" value="professor">professor</option>
+                <option onclick="prsntoccupation(value)" value="employee">employee</option>
+                <option onclick="prsntoccupation(value)" value="">other:please write</option> 
+              </div>
               <input
+                id="prsntoccupy"
                 type="text"
                 placeholder="professor"
                 name="prsntoccpy"
+                value=""
                 required
               />
             </div>
             <div class="input-box">
               <span class="details">Languages known:</span>
+              <i class="fas fa-caret-down" onclick="drop2()"></i>
+              <div class="dropdown-content">
+                <option onclick="lngknw(value)" value="French">French</option> 
+                <option onclick="lngknw(value)" value="German">German</option>
+                <option onclick="lngknw(value)" value="Iranology">Iranology</option>
+                <option onclick="lngknw(value)" value="persian">persian</option>
+                <option onclick="lngknw(value)" value="Italian">Italian</option>
+              </div>
               <input
+                id="langknwn"
                 type="text"
                 placeholder="italian"
                 name="languesknwn"
+                value=""
                 required
               />
             </div>
             <div class="input-box">
-              <span class="details">country:</span>
+              <span class="details">Country:</span>
+              <i class="fas fa-caret-down" onclick="drop3()"></i>
+              <div class="dropdown-content" name="country">
+                <option onclick="country(value)" value="Afganistan">Afghanistan</option> 
+                <option onclick="country(value)" value="Albania">Albania</option>
+                <option onclick="country(value)" value="Algeria">Algeria</option>
+                <option onclick="country(value)" value="American Samoa">American Samoa</option>
+                <option onclick="country(value)" value="Andorra">Andorra</option>
+                <option onclick="country(value)" value="Bahrain">Bahrain</option>
+                <option onclick="country(value)" value="Bangladesh">Bangladesh</option>
+                <option onclick="country(value)" value="Bolivia">Bolivia</option>
+                <option onclick="country(value)" value="Italy">Italy</option>
+                <option onclick="country(value)" value="India">India</option>
+              </div>
               <input
+                id="cntry"
                 type="text"
                 placeholder="usa"
                 name="country"
+                value=""
                 required
               />
             </div>
@@ -100,10 +146,229 @@
 
             <div class="input-box">
               <span class="details">Phone Number:</span>
+              <i class="fas fa-caret-down" onclick="drop4()"></i>
+              <div class="dropdown-content" name="country">
+                <option onclick="phnbr(value)" value="376">Andorra (+376)</option>
+                <option onclick="phnbr(value)" value="244">Angola (+244)</option>
+                <option onclick="phnbr(value)" value="1264">Anguilla (+1264)</option>
+                <option onclick="phnbr(value)" value="1268">Antigua & Barbuda (+1268)</option>
+                <option onclick="phnbr(value)" value="54">Argentina (+54)</option>
+                <option onclick="phnbr(value)" value="374">Armenia (+374)</option>
+                <option onclick="phnbr(value)" value="297">Aruba (+297)</option>
+                <option onclick="phnbr(value)" value="61">Australia (+61)</option>
+                <option onclick="phnbr(value)" value="43">Austria (+43)</option>
+                <option onclick="phnbr(value)" value="213">Algeria (+213)</option>
+                <option onclick="phnbr(value)" value="994">Azerbaijan (+994)</option>
+                <option onclick="phnbr(value)" value="1242">Bahamas (+1242)</option>
+                <option onclick="phnbr(value)" value="973">Bahrain (+973)</option>
+                <option onclick="phnbr(value)" value="880">Bangladesh (+880)</option>
+                <option onclick="phnbr(value)" value="1246">Barbados (+1246)</option>
+                <option onclick="phnbr(value)" value="375">Belarus (+375)</option>
+                <option onclick="phnbr(value)" value="32">Belgium (+32)</option>
+                <option onclick="phnbr(value)" value="501">Belize (+501)</option>
+                <option onclick="phnbr(value)" value="229">Benin (+229)</option>
+                <option onclick="phnbr(value)" value="1441">Bermuda (+1441)</option>
+                <option onclick="phnbr(value)" value="975">Bhutan (+975)</option>
+                <option onclick="phnbr(value)" value="591">Bolivia (+591)</option>
+                <option onclick="phnbr(value)" value="387">Bosnia Herzegovina (+387)</option>
+                <option onclick="phnbr(value)" value="267">Botswana (+267)</option>
+                <option onclick="phnbr(value)" value="55">Brazil (+55)</option>
+                <option onclick="phnbr(value)" value="673">Brunei (+673)</option>
+                <option onclick="phnbr(value)" value="359">Bulgaria (+359)</option>
+                <option onclick="phnbr(value)" value="226">Burkina Faso (+226)</option>
+                <option onclick="phnbr(value)" value="257">Burundi (+257)</option>
+                <option onclick="phnbr(value)" value="855">Cambodia (+855)</option>
+                <option onclick="phnbr(value)" value="237">Cameroon (+237)</option>
+                <option onclick="phnbr(value)" value="1">Canada (+1)</option>
+                <option onclick="phnbr(value)" value="238">Cape Verde Islands (+238)</option>
+                <option onclick="phnbr(value)" value="1345">Cayman Islands (+1345)</option>
+                <option onclick="phnbr(value)" value="236">Central African Republic (+236)</option>
+                <option onclick="phnbr(value)" value="56">Chile (+56)</option>
+                <option onclick="phnbr(value)" value="86">China (+86)</option>
+                <option onclick="phnbr(value)" value="57">Colombia (+57)</option>
+                <option onclick="phnbr(value)" value="269">Comoros (+269)</option>
+                <option onclick="phnbr(value)" value="242">Congo (+242)</option>
+                <option onclick="phnbr(value)" value="682">Cook Islands (+682)</option>
+                <option onclick="phnbr(value)" value="506">Costa Rica (+506)</option>
+                <option onclick="phnbr(value)" value="385">Croatia (+385)</option>
+                <option onclick="phnbr(value)" value="53">Cuba (+53)</option>
+                <option onclick="phnbr(value)" value="90392">Cyprus North (+90392)</option>
+                <option onclick="phnbr(value)" value="357">Cyprus South (+357)</option>
+                <option onclick="phnbr(value)" value="42">Czech Republic (+42)</option>
+                <option onclick="phnbr(value)" value="45">Denmark (+45)</option>
+                <option onclick="phnbr(value)" value="253">Djibouti (+253)</option>
+                <option onclick="phnbr(value)" value="1809">Dominica (+1809)</option>
+                <option onclick="phnbr(value)" value="1809">Dominican Republic (+1809)</option>
+                <option onclick="phnbr(value)" value="593">Ecuador (+593)</option>
+                <option onclick="phnbr(value)" value="20">Egypt (+20)</option>
+                <option onclick="phnbr(value)" value="503">El Salvador (+503)</option>
+                <option onclick="phnbr(value)" value="240">Equatorial Guinea (+240)</option>
+                <option onclick="phnbr(value)" value="291">Eritrea (+291)</option>
+                <option onclick="phnbr(value)" value="372">Estonia (+372)</option>
+                <option onclick="phnbr(value)" value="251">Ethiopia (+251)</option>
+                <option onclick="phnbr(value)" value="500">Falkland Islands (+500)</option>
+                <option onclick="phnbr(value)" value="298">Faroe Islands (+298)</option>
+                <option onclick="phnbr(value)" value="679">Fiji (+679)</option>
+                <option onclick="phnbr(value)" value="358">Finland (+358)</option>
+                <option onclick="phnbr(value)" value="33">France (+33)</option>
+                <option onclick="phnbr(value)" value="594">French Guiana (+594)</option>
+                <option onclick="phnbr(value)" value="689">French Polynesia (+689)</option>
+                <option onclick="phnbr(value)" value="241">Gabon (+241)</option>
+                <option onclick="phnbr(value)" value="220">Gambia (+220)</option>
+                <option onclick="phnbr(value)" value="7880">Georgia (+7880)</option>
+                <option onclick="phnbr(value)" value="49">Germany (+49)</option>
+                <option onclick="phnbr(value)" value="233">Ghana (+233)</option>
+                <option onclick="phnbr(value)" value="350">Gibraltar (+350)</option>
+                <option onclick="phnbr(value)" value="30">Greece (+30)</option>
+                <option onclick="phnbr(value)" value="299">Greenland (+299)</option>
+                <option onclick="phnbr(value)" value="1473">Grenada (+1473)</option>
+                <option onclick="phnbr(value)" value="590">Guadeloupe (+590)</option>
+                <option onclick="phnbr(value)" value="671">Guam (+671)</option>
+                <option onclick="phnbr(value)" value="502">Guatemala (+502)</option>
+                <option onclick="phnbr(value)" value="224">Guinea (+224)</option>
+                <option onclick="phnbr(value)" value="245">Guinea - Bissau (+245)</option>
+                <option onclick="phnbr(value)" value="592">Guyana (+592)</option>
+                <option onclick="phnbr(value)" value="509">Haiti (+509)</option>
+                <option onclick="phnbr(value)" value="504">Honduras (+504)</option>
+                <option onclick="phnbr(value)" value="852">Hong Kong (+852)</option>
+                <option onclick="phnbr(value)" value="36">Hungary (+36)</option>
+                <option onclick="phnbr(value)" value="354">Iceland (+354)</option>
+                <option onclick="phnbr(value)" value="91">India (+91)</option>
+                <option onclick="phnbr(value)" value="62">Indonesia (+62)</option>
+                <option onclick="phnbr(value)" value="98">Iran (+98)</option>
+                <option onclick="phnbr(value)" value="964">Iraq (+964)</option>
+                <option onclick="phnbr(value)" value="353">Ireland (+353)</option>
+                <option onclick="phnbr(value)" value="972">Israel (+972)</option>
+                <option onclick="phnbr(value)" value="39">Italy (+39)</option>
+                <option onclick="phnbr(value)" value="1876">Jamaica (+1876)</option>
+                <option onclick="phnbr(value)" value="81">Japan (+81)</option>
+                <option onclick="phnbr(value)" value="962">Jordan (+962)</option>
+                <option onclick="phnbr(value)" value="7">Kazakhstan (+7)</option>
+                <option onclick="phnbr(value)" value="254">Kenya (+254)</option>
+                <option onclick="phnbr(value)" value="686">Kiribati (+686)</option>
+                <option onclick="phnbr(value)" value="850">Korea North (+850)</option>
+                <option onclick="phnbr(value)" value="82">Korea South (+82)</option>
+                <option onclick="phnbr(value)" value="965">Kuwait (+965)</option>
+                <option onclick="phnbr(value)" value="996">Kyrgyzstan (+996)</option>
+                <option onclick="phnbr(value)" value="856">Laos (+856)</option>
+                <option onclick="phnbr(value)" value="371">Latvia (+371)</option>
+                <option onclick="phnbr(value)" value="961">Lebanon (+961)</option>
+                <option onclick="phnbr(value)" value="266">Lesotho (+266)</option>
+                <option onclick="phnbr(value)" value="231">Liberia (+231)</option>
+                <option onclick="phnbr(value)" value="218">Libya (+218)</option>
+                <option onclick="phnbr(value)" value="417">Liechtenstein (+417)</option>
+                <option onclick="phnbr(value)" value="370">Lithuania (+370)</option>
+                <option onclick="phnbr(value)" value="352">Luxembourg (+352)</option>
+                <option onclick="phnbr(value)" value="853">Macao (+853)</option>
+                <option onclick="phnbr(value)" value="389">Macedonia (+389)</option>
+                <option onclick="phnbr(value)" value="261">Madagascar (+261)</option>
+                <option onclick="phnbr(value)" value="265">Malawi (+265)</option>
+                <option onclick="phnbr(value)" value="60">Malaysia (+60)</option>
+                <option onclick="phnbr(value)" value="960">Maldives (+960)</option>
+                <option onclick="phnbr(value)" value="223">Mali (+223)</option>
+                <option onclick="phnbr(value)" value="356">Malta (+356)</option>
+                <option onclick="phnbr(value)" value="692">Marshall Islands (+692)</option>
+                <option onclick="phnbr(value)" value="596">Martinique (+596)</option>
+                <option onclick="phnbr(value)" value="222">Mauritania (+222)</option>
+                <option onclick="phnbr(value)" value="269">Mayotte (+269)</option>
+                <option onclick="phnbr(value)" value="52">Mexico (+52)</option>
+                <option onclick="phnbr(value)" value="691">Micronesia (+691)</option>
+                <option onclick="phnbr(value)" value="373">Moldova (+373)</option>
+                <option onclick="phnbr(value)" value="377">Monaco (+377)</option>
+                <option onclick="phnbr(value)" value="976">Mongolia (+976)</option>
+                <option onclick="phnbr(value)" value="1664">Montserrat (+1664)</option>
+                <option onclick="phnbr(value)" value="212">Morocco (+212)</option>
+                <option onclick="phnbr(value)" value="258">Mozambique (+258)</option>
+                <option onclick="phnbr(value)" value="95">Myanmar (+95)</option>
+                <option onclick="phnbr(value)" value="264">Namibia (+264)</option>
+                <option onclick="phnbr(value)" value="674">Nauru (+674)</option>
+                <option onclick="phnbr(value)" value="977">Nepal (+977)</option>
+                <option onclick="phnbr(value)" value="31">Netherlands (+31)</option>
+                <option onclick="phnbr(value)" value="687">New Caledonia (+687)</option>
+                <option onclick="phnbr(value)" value="64">New Zealand (+64)</option>
+                <option onclick="phnbr(value)" value="505">Nicaragua (+505)</option>
+                <option onclick="phnbr(value)" value="227">Niger (+227)</option>
+                <option onclick="phnbr(value)" value="234">Nigeria (+234)</option>
+                <option onclick="phnbr(value)" value="683">Niue (+683)</option>
+                <option onclick="phnbr(value)" value="672">Norfolk Islands (+672)</option>
+                <option onclick="phnbr(value)" value="670">Northern Marianas (+670)</option>
+                <option onclick="phnbr(value)" value="47">Norway (+47)</option>
+                <option onclick="phnbr(value)" value="968">Oman (+968)</option>
+                <option onclick="phnbr(value)" value="680">Palau (+680)</option>
+                <option onclick="phnbr(value)" value="507">Panama (+507)</option>
+                <option onclick="phnbr(value)" value="675">Papua New Guinea (+675)</option>
+                <option onclick="phnbr(value)" value="595">Paraguay (+595)</option>
+                <option onclick="phnbr(value)" value="51">Peru (+51)</option>
+                <option onclick="phnbr(value)" value="63">Philippines (+63)</option>
+                <option onclick="phnbr(value)" value="48">Poland (+48)</option>
+                <option onclick="phnbr(value)" value="351">Portugal (+351)</option>
+                <option onclick="phnbr(value)" value="1787">Puerto Rico (+1787)</option>
+                <option onclick="phnbr(value)" value="974">Qatar (+974)</option>
+                <option onclick="phnbr(value)" value="262">Reunion (+262)</option>
+                <option onclick="phnbr(value)" value="40">Romania (+40)</option>
+                <option onclick="phnbr(value)" value="7">Russia (+7)</option>
+                <option onclick="phnbr(value)" value="250">Rwanda (+250)</option>
+                <option onclick="phnbr(value)" value="378">San Marino (+378)</option>
+                <option onclick="phnbr(value)" value="239">Sao Tome & Principe (+239)</option>
+                <option onclick="phnbr(value)" value="966">Saudi Arabia (+966)</option>
+                <option onclick="phnbr(value)" value="221">Senegal (+221)</option>
+                <option onclick="phnbr(value)" value="381">Serbia (+381)</option>
+                <option onclick="phnbr(value)" value="248">Seychelles (+248)</option>
+                <option onclick="phnbr(value)" value="232">Sierra Leone (+232)</option>
+                <option onclick="phnbr(value)" value="65">Singapore (+65)</option>
+                <option onclick="phnbr(value)" value="421">Slovak Republic (+421)</option>
+                <option onclick="phnbr(value)" value="386">Slovenia (+386)</option>
+                <option onclick="phnbr(value)" value="677">Solomon Islands (+677)</option>
+                <option onclick="phnbr(value)" value="252">Somalia (+252)</option>
+                <option onclick="phnbr(value)" value="27">South Africa (+27)</option>
+                <option onclick="phnbr(value)" value="34">Spain (+34)</option>
+                <option onclick="phnbr(value)" value="94">Sri Lanka (+94)</option>
+                <option onclick="phnbr(value)" value="290">St. Helena (+290)</option>
+                <option onclick="phnbr(value)" value="1869">St. Kitts (+1869)</option>
+                <option onclick="phnbr(value)" value="1758">St. Lucia (+1758)</option>
+                <option onclick="phnbr(value)" value="249">Sudan (+249)</option>
+                <option onclick="phnbr(value)" value="597">Suriname (+597)</option>
+                <option onclick="phnbr(value)" value="268">Swaziland (+268)</option>
+                <option onclick="phnbr(value)" value="46">Sweden (+46)</option>
+                <option onclick="phnbr(value)" value="41">Switzerland (+41)</option>
+                <option onclick="phnbr(value)" value="963">Syria (+963)</option>
+                <option onclick="phnbr(value)" value="886">Taiwan (+886)</option>
+                <option onclick="phnbr(value)" value="7">Tajikstan (+7)</option>
+                <option onclick="phnbr(value)" value="66">Thailand (+66)</option>
+                <option onclick="phnbr(value)" value="228">Togo (+228)</option>
+                <option onclick="phnbr(value)" value="676">Tonga (+676)</option>
+                <option onclick="phnbr(value)" value="1868">Trinidad & Tobago (+1868)</option>
+                <option onclick="phnbr(value)" value="216">Tunisia (+216)</option>
+                <option onclick="phnbr(value)" value="90">Turkey (+90)</option>
+                <option onclick="phnbr(value)" value="7">Turkmenistan (+7)</option>
+                <option onclick="phnbr(value)" value="993">Turkmenistan (+993)</option>
+                <option onclick="phnbr(value)" value="1649">Turks & Caicos Islands (+1649)</option>
+                <option onclick="phnbr(value)" value="688">Tuvalu (+688)</option>
+                <option onclick="phnbr(value)" value="256">Uganda (+256)</option>
+                <!-- <oponclick="phnbr(value)"="GB" value="44">UK (+44)</option> -->
+                <option onclick="phnbr(value)" value="380">Ukraine (+380)</option>
+                <option onclick="phnbr(value)" value="971">United Arab Emirates (+971)</option>
+                <option onclick="phnbr(value)" value="598">Uruguay (+598)</option>
+                <!-- <oponclick="phnbr(value)"="US" value="1">USA (+1)</option> -->
+                <option onclick="phnbr(value)" value="7">Uzbekistan (+7)</option>
+                <option onclick="phnbr(value)" value="678">Vanuatu (+678)</option>
+                <option onclick="phnbr(value)" value="379">Vatican City (+379)</option>
+                <option onclick="phnbr(value)" value="58">Venezuela (+58)</option>
+                <option onclick="phnbr(value)" value="84">Vietnam (+84)</option>
+                <option onclick="phnbr(value)" value="84">Virgin Islands - British (+1284)</option>
+                <option onclick="phnbr(value)" value="84">Virgin Islands - US (+1340)</option>
+                <option onclick="phnbr(value)" value="681">Wallis & Futuna (+681)</option>
+                <option onclick="phnbr(value)" value="969">Yemen (North)(+969)</option>
+                <option onclick="phnbr(value)" value="967">Yemen (South)(+967)</option>
+                <option onclick="phnbr(value)" value="260">Zambia (+260)</option>
+                <option onclick="phnbr(value)" value="263">Zimbabwe (+263)</option>
+              </div>
               <input
+                id="pnumbr"
                 type="text"
-                placeholder="1234567890"
+                placeholder="91000000051"
                 name="phonenumber"
+                value=""
                 required
               />
             </div>
@@ -119,11 +384,13 @@
             <div class="input-box">
               <span class="details">Password:</span>
               <input
+                id="pswd"
                 type="password"
                 placeholder="password"
                 name="passwd"
                 required
               />
+              <p id="snth">strength:</p>
             </div>
           </div>
           <div class="button">
@@ -138,5 +405,5 @@
       </div>
     </div>
   
-    <script src="../login/slogin.js"></script>
+    <script src="../login/flogin.js"></script>
 </body></html>
